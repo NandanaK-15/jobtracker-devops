@@ -14,6 +14,8 @@ spec:
       labels:
         app: todoapp
     spec:
+      imagePullSecrets:
+      - name: ecr-secret
       containers:
       - name: todoapp
         image: 904053120070.dkr.ecr.ap-south-1.amazonaws.com/todoapp:latest
